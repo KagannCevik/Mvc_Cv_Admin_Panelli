@@ -1,0 +1,17 @@
+﻿@using Mvc_Cv.Models.Entity
+@model Mvc_Cv.Models.Entity.TBLADMIN
+@{
+    ViewBag.Title = "AdminDuzenle";
+    Layout = "~/Views/Shared/_AdminLoyout.cshtml";
+}
+<br />
+<form method="post">
+    <label>Kullanıcı Adı</label>
+    @Html.TextBoxFor(x => x.KULLANICIADI, new { @class = "form-control" })
+    <br />
+    <label>Şifre</label>
+    @Html.TextBoxFor(x => x.SIFRE, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
+

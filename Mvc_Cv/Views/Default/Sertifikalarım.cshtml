@@ -1,0 +1,29 @@
+﻿@using Mvc_Cv.Models.Entity
+@model List<TBLSERTIFIKALARIM>
+<div class="resume-section-content">
+    <h2 class="mb-5">Ödüller ve Sertifikalar</h2>
+    <div class="row">
+        @foreach (var x in Model)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm rounded-3">
+                    <div class="card-body">
+                        <!-- KONU'yu dikkat çekici yapalım -->
+                        <h5 class="card-title fw-bold text-primary" style="font-family: 'Segoe UI', sans-serif; font-size: 1.6rem;">
+                            @x.KONU
+                        </h5>
+
+                        <!-- KURUM'u alt başlık olarak ve dikkat çekici yapalım -->
+                        <h6 class="card-subtitle mb-2 text-info" style="font-family: 'Roboto', sans-serif; font-size: 1.2rem;">
+                            <strong>Kurum:</strong> @x.KURUM_ADI
+                        </h6>
+
+                        <!-- Açıklamayı ekleyelim -->
+                        <p class="card-text mt-2"><strong>Açıklama:</strong> @x.ACIKLAMA</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
