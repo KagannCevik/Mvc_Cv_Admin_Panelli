@@ -82,4 +82,3 @@ Bu proje sayesinde aşağıdaki konularda önemli deneyimler edindim:
 
  ✔ PartialView kullanımı ve avantajları
 
-📌 Proje detaylarına ve kaynak kodlarına ulaşmak için GitHub reposunu ziyaret edebilirsiniz.
